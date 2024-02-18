@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".SignUp">
+
+    <!--Centre line for relative layout-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/centerline2"
+        android:layout_centerInParent="true">
+    </RelativeLayout>
+
+    <!--Top text block-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_above="@id/centerline2"
+        android:layout_marginBottom="150dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="User Sign Up"
+            android:textSize="42sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/ubuntu_bold">
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome to ScribblePad"
+            android:textSize="23sp"
+            android:textColor="@color/colorNoteColor4"
+            android:fontFamily="@font/ubuntu_medium">
+        </TextView>
+
+    </LinearLayout>
+
+    <!--Email text field-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/centerline2"
+        app:boxBackgroundMode="filled"
+        app:boxBackgroundColor="@color/colorSearchBackground"
+        android:textColorHint="@color/colorTextHint"
+        android:id="@+id/email"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/signUpEmail"
+            android:hint="Enter your email"
+            android:textColor="@color/white"
+            android:inputType="textEmailAddress">
+        </EditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--Password text field-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/centerline2"
+        android:id="@+id/password"
+        app:boxBackgroundMode="filled"
+        app:boxBackgroundColor="@color/colorSearchBackground"
+        android:textColorHint="@color/colorTextHint"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/colorTextHint">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/signUpPassword"
+            android:hint="Enter your password"
+            android:textColor="@color/white"
+            android:inputType="textPassword">
+        </EditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--Sign up button-->
+    <RelativeLayout
+        android:id="@+id/signUpButton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/password"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/button_design">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/ubuntu_bold"
+            android:text="Sign Up"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"></TextView>
+
+    </RelativeLayout>
+
+    <!--Switch to log in-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Already a user? Log In here"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12sdp"
+        android:fontFamily="@font/ubuntu_regular"
+        android:layout_below="@id/signUpButton"
+        android:id="@+id/switchToLogin"
+        android:layout_marginTop="70dp">
+    </TextView>
+
+
+</RelativeLayout>

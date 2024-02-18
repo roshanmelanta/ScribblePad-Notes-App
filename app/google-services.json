@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "637022924585",
+    "project_id": "scribblepad-e08f1",
+    "storage_bucket": "scribblepad-e08f1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:637022924585:android:d36a15be4da1016390d138",
+        "android_client_info": {
+          "package_name": "com.example.notesapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "637022924585-4a6rdlfehqvrj17eutpk9k4i55t1f3gc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtZIp4qgPbrxb_LSI6mk_2Z1keQ8vnk2U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "637022924585-4a6rdlfehqvrj17eutpk9k4i55t1f3gc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

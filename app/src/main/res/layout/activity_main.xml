@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".MainActivity">
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/switchToForgotPassword"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        android:id="@+id/progressBarLogin"
+        android:layout_marginTop="10dp">
+    </ProgressBar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/centerline"
+        android:layout_centerInParent="true">
+    </RelativeLayout>
+
+    <!--Top text layout-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_above="@id/centerline"
+        android:layout_marginBottom="150dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ScribblePad"
+            android:textSize="42sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/ubuntu_bold">
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Log In to continue"
+            android:fontFamily="@font/ubuntu_medium"
+            android:textSize="23sp"
+            android:textColor="@color/colorNoteColor4">
+        </TextView>
+
+    </LinearLayout>
+
+    <!--Email text field-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/centerline"
+        app:boxBackgroundMode="filled"
+        app:boxBackgroundColor="@color/colorSearchBackground"
+        android:textColorHint="@color/colorTextHint"
+        app:hintTextAppearance="@style/TextAppearance.AppCompat"
+        android:id="@+id/email"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/loginEmail"
+            android:hint="Enter your email"
+            android:textColor="@color/white"
+            android:fontFamily="@font/ubuntu_regular"
+            android:inputType="textEmailAddress">
+        </EditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--Password text field-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/centerline"
+        android:id="@+id/password"
+        app:boxBackgroundMode="filled"
+        app:boxBackgroundColor="@color/colorSearchBackground"
+        android:textColorHint="@color/colorTextHint"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/colorTextHint">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/loginPassword"
+            android:hint="Enter your password"
+            android:textColor="@color/white"
+            android:fontFamily="@font/ubuntu_regular"
+            android:inputType="textPassword">
+        </EditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--Log in button code with background-->
+    <RelativeLayout
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/password"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/button_design">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="8dp"
+            android:text="Log In"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            android:fontFamily="@font/ubuntu_bold"></TextView>
+
+    </RelativeLayout>
+
+    <!--Forgot password text-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginButton"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/switchToForgotPassword"
+        android:text="Forgot Password?"
+        android:gravity="center_horizontal"
+        android:textColor="@color/white">
+    </TextView>
+
+    <!--Sign up button-->
+    <RelativeLayout
+        android:id="@+id/signUp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/button_design">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="8dp"
+            android:text="New User? Sign Up Here"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            android:fontFamily="@font/ubuntu_bold"></TextView>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

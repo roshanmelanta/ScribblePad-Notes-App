@@ -1,6 +1,8 @@
 # ScribblePad - Notes Application
 
-Welcome to the ScribblePad repository! This Android app allows users to create, manage, and organize their notes using Firebase as the backend. Below, we provide an overview of key files, functionalities, and usage instructions:
+Welcome to the ScribblePad repository! This Android app allows users to create, manage, and organize their notes using Firebase as the backend. Below, we provide an overview of key files, functionalities, and usage instructions
+Here is a working demonstration of the app: https://youtu.be/9_g0DGlJxMg
+
 
 ## Features
 
